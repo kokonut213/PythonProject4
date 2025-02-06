@@ -26,6 +26,8 @@ class Cat(Animal):
     def get_color(self):
         return self.color
 
+    def purr(self):  # Thêm hàm mới
+        return "purrrrrr"
 
 
 
@@ -38,4 +40,4 @@ for pet in animals:
      print(f"{pet.get_name()},says:{pet.make_sound()}")
      print(f"{dog.get_name()} is a:{dog.get_breed()}")
      print(f"{cat.get_name()} is {cat.get_color()}")
-
+     print(f"{cat.get_name()} also: {cat.purr()}")  # Gọi hàm mới
